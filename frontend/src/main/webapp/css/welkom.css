@@ -1,0 +1,334 @@
+/* div lines for testing */
+/*
+div {
+    border: solid thin;
+}
+*/
+
+/* css grid */
+#frame {
+	display: grid;
+	grid-template-columns: 1fr 10fr 1fr;
+	grid-template-rows: auto auto 1fr;
+}
+
+#productTabel {
+	grid-column: 2;
+	grid-row: 2;
+}
+
+#registrerenDiv {
+	grid-column: 2;
+	grid-row: 2;
+	margin-top: 60px;
+}
+
+#categorieTabel {
+	margin-top: 46px;
+	grid-column: 2;
+	grid-row: 2;
+}
+
+#adminLink {
+	margin-top: 60px;
+	grid-row: 1;
+	grid-column: 2;
+	text-align: center;
+}
+
+#adminLink {
+	list-style: none;
+}
+
+#adminLink a:link, #welkomText a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+#adminLink a:hover {
+	color: #96a3d1;
+	text-decoration: underline;
+}
+
+#login, #ingelogd, #productToevoegenDiv {
+	grid-row: 2;
+	grid-column: 2;
+	margin-top: 60px;
+	text-align: center;
+}
+
+#welkomText {
+	grid-row: 2;
+	grid-column: 2;
+}
+
+#aanbiedingTabel {
+	grid-row: 3;
+	grid-column: 2;
+	text-align: center;
+}
+
+#navbar {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr auto;
+}
+
+#firstRow {
+	grid-column: 1;
+	grid-row: 1;
+	display: grid;
+	grid-template-columns: 0.5fr 1fr 1fr 1fr 5fr 1fr 1fr 0.5fr;
+	background-color: #414650;
+}
+
+#index {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+#producten {
+	grid-column: 3;
+	grid-row: 1;
+}
+
+#categorieNavbar {
+	grid-column: 4;
+	grid-row: 1;
+	cursor: pointer;
+}
+
+#inloggen {
+	grid-column: 6;
+	grid-row: 1;
+}
+
+#winkelwagen {
+	grid-column: 7;
+	grid-row: 1;
+	cursor: pointer;
+}
+
+#secondRow {
+	grid-column: 1;
+	grid-row: 2;
+	display: grid;
+	grid-template-columns: 0.5fr 1fr 1fr 1fr 5fr 1fr 1fr 0.5fr;
+}
+
+#empty {
+	grid-column: 1/-1;
+	grid-row: 2;
+	background-color: #00000000;
+}
+
+#categorie {
+	grid-column: auto/5;
+	grid-row: 2;
+	text-align: center;
+	color: white;
+	background-color: #414650;
+	border: 1px solid #bbb;
+}
+
+#categorieList {
+	list-style: none;
+	padding: 4px;
+}
+
+#winkelwagenDropdown {
+	grid-column: 7;
+	grid-row: 2;
+	text-align: center;
+	color: white;
+	background-color: #414650;
+	border: 1px solid #bbb;
+}
+
+#winkelwagenList {
+	list-style: none;
+	padding: 0;
+}
+
+#winkelwagenList li {
+	border-bottom: 1px solid #bbb;
+	padding: 4px;
+}
+
+#winkelwagenList li p {
+	display: inline;
+}
+
+#winkelwagenList li p:nth-child(-n + 3) {
+	margin-right: 6px;
+}
+
+body {
+	background-color: #95907d;
+	margin: 0;
+}
+
+#categorieList li {
+	cursor: pointer;
+}
+
+#welkomText a:link, #welkomText a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+#welkomText a:hover {
+	color: #96a3d1;
+	text-decoration: underline;
+}
+
+/* inloggen in navbar */
+ul#navbar div#firstRow li#inloggen {
+	border-left: 1px solid #bbb;
+	/* float: right;
+    margin-right: 50px; */
+}
+
+/* winkelwagen in navbar */
+/* ul#navbar div#firstRow li#winkelwagen {
+	float: right;
+    border-left: 1px solid #bbb;
+} */
+
+/* left child in navbar */
+ul#navbar div#firstRow li:first-child {
+	border-left: 1px solid #bbb;
+	/* margin-left: 50px; */
+	border-left: 1px solid #bbb;
+}
+
+/* all childs in navbar */
+ul#navbar div#firstRow li {
+	border-right: 1px solid #bbb;
+	/* float: left; */
+	border-right: 1px solid #bbb;
+}
+
+/* navbar */
+ul#navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+/* table homepage*/
+table#aanbiedingen {
+	width: 100%;
+}
+
+table#aanbiedingen, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table#aanbiedingen tablehead th, tbody#productTable td {
+	padding: 5px;
+}
+
+tbody#productTable tr td:nth-child(-n + 6) {
+	cursor: pointer;
+}
+
+tbody#productTable tr td input {
+	cursor: pointer;
+}
+
+tbody#productTable td {
+	text-align: center;
+}
+
+table#aanbiedingen thead {
+	background-color: #414650;
+	color: white;
+}
+
+tbody#productTable tr:nth-child(even) {
+	background-color: #96a3d1;
+}
+
+tbody#productTable tr:nth-child(odd) {
+	background-color: #6b76b2;
+}
+
+/* table producten*/
+table#producten {
+	width: 100%;
+	margin-top: 100px;
+}
+
+table#producten, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table#producten  tablehead th, tbody#productTable td {
+	padding: 5px;
+}
+
+table#producten  thead {
+	background-color: #414650;
+	color: white;
+}
+
+/* text in navbar */
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* change color on hover */
+li a:hover {
+	background-color: #333;
+}
+
+.active {
+	background-color: #6b76b2;
+}
+
+#welkomText {
+	margin-top: 50px;
+}
+
+tbody#categorieProductTable tr:nth-child(even) {
+	background-color: #96a3d1;
+}
+
+tbody#categorieProductTable tr:nth-child(odd) {
+	background-color: #6b76b2;
+}
+
+/* table producten*/
+table#catTable {
+	width: 100%;
+	margin-top: 100px;
+}
+
+table#catTable, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table#catTable  tablehead th, tbody#productTable td {
+	padding: 5px;
+}
+
+table#catTable  thead {
+	background-color: #414650;
+	color: white;
+}
+
+#succesmelding{
+	margin-top: 60px;
+}

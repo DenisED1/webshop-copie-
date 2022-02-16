@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="css/welkom.css">
+<link rel="stylesheet" href="css/afronden.css">
+<title>Webshop IAC</title>
+</head>
+<body>
+	<div id="frame">
+		<div id="navbar">
+			<ul id="navbar">
+				<div id="firstRow">
+					<li id="index"><a href="index.html">Home</a></li>
+					<li id="producten"><a href="producten.html">Producten</a></li>
+					<li id="categorieNavbar"><a>Categorie&#235;n</a></li>
+					<li id="inloggen"><a href="inloggen.html">Inloggen</a></li>
+					<li id="winkelwagen" class="active"><a>Winkelwagen</a></li>
+				</div>
+				<div id="secondRow">
+					<div id="empty"></div>
+					<div id="categorie" style="display: none;">
+						<ul id="categorieList">
+							<!-- hier komen categorieen -->
+						</ul>
+					</div>
+					<div id="winkelwagenDropdown" style="display: none;">
+						<ul id="winkelwagenList">
+							<!-- hier komen artikellen -->
+						</ul>
+					</div>
+				</div>
+			</ul>
+		</div>
+		<form id="regForm" action="">
+
+			<h1>Bestelling afronden</h1>
+
+			<!-- One "tab" for each step in the form: -->
+			<div class="tab">
+				<h3>Klantgegevens</h3>
+				<p>
+					Naam:<input name="naam" id="naam" disabled>
+				</p>
+				<p>
+					Straat:<input name="straat" id="straat" disabled>
+				</p>
+				<p>
+					Huisnummer:<input name="huisnummer" id="huisnummer" disabled>
+				</p>
+				<p>
+					Toevoeging:<input name="toevoeging" id="toevoeging" disabled>
+				</p>
+				<p>
+					Postcode:<input name="postcode" id="postcode" disabled>
+				</p>
+				<p>
+					Plaats:<input name="plaats" id="plaats" disabled>
+				</p>
+			</div>
+
+			<div class="tab">
+				<div id="tabel">
+					<table>
+						<thead>
+							<th>Naam</th>
+							<th>Aantal</th>
+							<th>Prijs</th>
+						</thead>
+						<tbody id="productTable">
+							<!-- hier komen producten -->
+						</tbody>
+					</table>
+				</div>
+				<p>Totaalprijs:</p>
+				<p id="totaal"></p>
+			</div>
+
+			<div style="overflow: auto;">
+				<div style="float: right;">
+					<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+					<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+				</div>
+			</div>
+
+			<!-- Circles which indicates the steps of the form: -->
+			<div style="text-align: center; margin-top: 40px;">
+				<span class="step"></span> <span class="step"></span> <span
+					class="step"></span> <span class="step"></span>
+			</div>
+		</form>
+		<div id="succesmelding">
+			<h3>Producten besteld!</h3>
+			<p>U heeft uw producten succesvol besteld. De bestelde producten
+				worden zo snel mogelijk verstuurd.</p>
+		</div>
+		<script src="js/afronden.js"></script>
+		<script src="js/navbar.js"></script>
+	</div>
+</body>
+</html>

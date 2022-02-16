@@ -1,0 +1,216 @@
+/* div lines for testing */
+/*
+div {
+    border: solid thin;
+}
+*/
+
+/* css grid */
+#frame {
+    display: grid;
+    grid-template-columns: 1fr 5fr 5fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#navbar{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+}
+
+#firstRow{
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 5fr 1fr 1fr 0.5fr;
+  background-color: #414650;
+}
+
+#index{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#producten{
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#categorieNavbar{
+  grid-column: 4;
+  grid-row: 1;
+}
+
+#inloggen{
+  grid-column: 6;
+  grid-row: 1;
+}
+
+#winkelwagen{
+  grid-column: 7;
+  grid-row: 1;
+}
+
+#secondRow{
+  grid-column: 1;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 5fr 1fr 1fr 0.5fr;
+}
+
+#empty{
+  grid-column: 1/-1;
+  grid-row: 2;
+  background-color: #00000000;
+}
+
+#categorie {
+  grid-column: auto/5;
+  grid-row: 2;
+  text-align: center;
+  color:white;
+  background-color: #414650;
+  border: 1px solid #bbb;
+}
+
+#categorieList{
+  list-style: none;
+  padding: 4px;
+}
+
+#categorieList li {
+	cursor: pointer;
+}
+
+#winkelwagenDropdown {
+  grid-column: 7;
+  grid-row: 2;
+  text-align: center;
+  color:white;
+  background-color: #414650;
+  border: 1px solid #bbb;
+}
+
+#winkelwagenList{
+  list-style: none;
+  padding: 0;
+}
+
+#winkelwagenList li{
+  border-bottom: 1px solid #bbb;
+  padding: 4px;
+}
+
+#winkelwagenList li p{
+  display: inline;
+}
+
+#winkelwagenList li p:nth-child(-n + 3){
+  margin-right: 6px;
+}
+
+/* inloggen in navbar */
+ul#navbar div#firstRow li#inloggen {
+    border-left: 1px solid #bbb;
+}
+
+/* left child in navbar */
+ul#navbar div#firstRow li:first-child {
+    border-left: 1px solid #bbb;
+}
+
+/* all childs in navbar */
+ul#navbar div#firstRow li {
+    border-right: 1px solid #bbb;
+}
+
+/* navbar */
+ul#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* text in navbar */
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* change color on hover */
+li a:hover {
+    background-color: #333;
+}
+
+.active {
+    background-color: 	#6b76b2;
+}
+
+#titleAndImage {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#infoAndPrice {
+    grid-row: 1;
+    grid-column: 3;
+    font-size: 18pt;
+}
+
+#form{
+  margin-bottom: 2pt;
+}
+
+#aantal{
+  width: 25px;
+  text-align: center;
+}
+
+#feedback{
+  font-size: 12pt;
+  margin: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+body {
+    background-color: #95907d;
+    margin: 0;
+}
+
+#titleAndImage a {
+
+}
+
+#titleAndImage a:link, #titleAndImage a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#titleAndImage a:hover {
+    color: #96a3d1;
+    text-decoration: underline;
+}
+
+#titleAndImage{
+    margin-top: 50px;
+}
+
+#infoAndPrice {
+    margin-top: 100px;
+}

@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../../css/product.css">
+		<title>%s</title>
+	</head>
+	<body>
+		<div id="frame">
+			<div id="navbar">
+				<ul id="navbar">
+					<div id="firstRow">
+						<li id="index" class="active"><a href="../../index.html">Home</a></li>
+						<li id="producten"><a href="../../producten.html">Producten</a></li>
+						<li id="categorieNavbar"><a>Categorie&#235;n</a></li>
+						<li id="inloggen"><a href="../../inloggen.html">Inloggen</a></li>
+						<li id="winkelwagen"><a>Winkelwagen</a></li>
+					</div>
+					<div id="secondRow">
+						<div id="empty"></div>
+						<div id="categorie" style="display: none;">
+							<ul id="categorieList">
+								<!-- hier komen categorieen -->
+							</ul>
+						</div>
+						<div id="winkelwagenDropdown" style="display: none;">
+							<ul id="winkelwagenList">
+								<!-- hier komen artikellen -->
+							</ul>
+						</div>
+					</div>
+				</ul>
+			</div>
+			<div id="titleAndImage">
+				<h1>%s</h1>
+				<img src="../../pictures/%s.jpg" height='500' width='500' />
+			</div>
+			<div id="infoAndPrice">
+				<p>%s</p>
+				<p id="normalPrice">€%.2f</p>
+				<p id="discountPrice">%s</p>
+				<p id="reclameText">%s</p>
+				<form id="form">
+					<input type="number" id="aantal" min="1" max="99">
+					<input type="button" id="submit" value="Zet in winkelwagen">
+				</form>
+				<p id="feedback"></p>
+			</div>
+		</div>
+		<script src="../../js/product.js"></script>
+		<script src="../../js/navbar.js"></script>
+		<script type="text/javascript">
+			var id = %d;
+			var naam = "%s";
+			var prijs = %s;
+		</script>
+	</body>
+</html>

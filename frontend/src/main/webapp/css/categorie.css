@@ -1,0 +1,27 @@
+tbody#categorieProductTable tr:nth-child(even) {
+    background-color: #96a3d1;
+}
+
+tbody#categorieProductTable tr:nth-child(odd) {
+    background-color: #6b76b2;
+}
+
+/* table producten*/
+table#catTable {
+    width: 100%;
+    margin-top:100px;
+}
+
+table#catTable , th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table#catTable  tablehead th, tbody#productTable td {
+    padding: 5px;
+}
+
+table#catTable  thead {
+    background-color: #414650;
+    color: white;
+}

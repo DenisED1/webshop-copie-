@@ -1,0 +1,58 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/welkom.css">
+<title>Webshop IAC</title>
+</head>
+<body>
+	<div id="frame">
+		<div id="navbar">
+			<ul id="navbar">
+				<div id="firstRow">
+					<li id="index"><a href="index.html">Home</a></li>
+					<li id="producten" class="active"><a href="producten.html">Producten</a></li>
+					<li id="categorieNavbar"><a>Categorie&#235;n</a></li>
+					<li id="inloggen"><a href="inloggen.html">Inloggen</a></li>
+					<li id="winkelwagen"><a>Winkelwagen</a></li>
+				</div>
+				<div id="secondRow">
+					<div id="empty"></div>
+					<div id="categorie" style="display: none;">
+						<ul id="categorieList">
+							<!-- hier komen categorieen -->
+						</ul>
+					</div>
+					<div id="winkelwagenDropdown" style="display: none;">
+						<ul id="winkelwagenList">
+							<!-- hier komen artikellen -->
+						</ul>
+					</div>
+				</div>
+			</ul>
+		</div>
+		<div id="adminLink" style="display: none;">
+			<a href="admin.html">Beheer hier de producten.</a>
+		</div>
+
+		<div id="productTabel">
+			<table id="producten">
+				<thead id="tableHead">
+					<tr id="tableHeadRow">
+						<th>Afbeelding</th>
+						<th>Naam</th>
+						<th>Omschrijving</th>
+						<th>Reclame</th>
+						<th>Prijs</th>
+						<th>Geldig tot</th>
+					</tr>
+				</thead>
+				<tbody id="productTable">
+					<!-- hier komen producten -->
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<script src="js/producten.js"></script>
+	<script src="js/navbar.js"></script>
+</body>
+</html>

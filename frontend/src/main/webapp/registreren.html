@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Webshop IAC</title>
+<link rel="stylesheet" href="css/welkom.css">
+</head>
+<body>
+	<div id="frame">
+		<div id="navbar">
+			<ul id="navbar">
+				<div id="firstRow">
+					<li id="index"><a href="index.html">Home</a></li>
+					<li id="producten"><a href="producten.html">Producten</a></li>
+					<li id="categorieNavbar"><a>Categorie&#235;n</a></li>
+					<li id="inloggen" class="active"><a href="inloggen.html">Inloggen</a></li>
+					<li id="winkelwagen"><a>Winkelwagen</a></li>
+				</div>
+				<div id="secondRow">
+					<div id="empty"></div>
+					<div id="categorie" style="display: none;">
+						<ul id="categorieList">
+							<!-- hier komen categorieen -->
+						</ul>
+					</div>
+					<div id="winkelwagenDropdown" style="display: none;">
+						<ul id="winkelwagenList">
+							<!-- hier komen artikellen -->
+						</ul>
+					</div>
+				</div>
+			</ul>
+		</div>
+		<div id="registrerenDiv">
+			<form id="registerenForm" action="">
+				<h2>Registreren</h2>
+				<h3>Username en password</h3>
+				<p>
+					Username:<input name="username" id="username">
+				</p>
+				<p>
+					Password:<input type="password" name="password" id="password">
+				</p>
+				<h3>Persoonsgegevens</h3>
+				<p>
+					Naam:<input name="naam" id="naam">
+				</p>
+				<h3>Adres</h3>
+				<p>
+					Straat:<input name="straat" id="straat">
+				</p>
+				<p>
+					Huisnummer:<input name="huisnummer" id="huisnummer">
+				</p>
+				<p>
+					Toevoeging:<input name="toevoeging" id="toevoeging">
+				</p>
+				<p>
+					Postcode:<input name="postcode" id="postcode">
+				</p>
+				<p>
+					Plaats:<input name="plaats" id="plaats">
+				</p>
+				<input type="button" name="registreerKnop" value="Registreer"
+					onClick="registreer(this.form)">
+			</form>
+		</div>
+	</div>
+	<script src="js/registreren.js"></script>
+	<script src="js/navbar.js"></script>
+</body>
+</html>

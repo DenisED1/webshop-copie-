@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Product toevoegen</title>
+<link rel="stylesheet" href="css/welkom.css">
+</head>
+<body>
+	<div id="frame">
+		<div id="navbar">
+			<ul id="navbar">
+				<div id="firstRow">
+					<li id="index"><a href="index.html">Home</a></li>
+					<li id="producten"><a href="producten.html">Producten</a></li>
+					<li id="categorieNavbar"><a>Categorie&#235;n</a></li>
+					<li id="inloggen"><a href="inloggen.html">Inloggen</a></li>
+					<li id="winkelwagen"><a>Winkelwagen</a></li>
+				</div>
+				<div id="secondRow">
+					<div id="empty"></div>
+					<div id="categorie" style="display: none;">
+						<ul id="categorieList">
+							<!-- hier komen categorieen -->
+						</ul>
+					</div>
+					<div id="winkelwagenDropdown" style="display: none;">
+						<ul id="winkelwagenList">
+							<!-- hier komen artikellen -->
+						</ul>
+					</div>
+				</div>
+			</ul>
+		</div>
+		<div id="productToevoegenDiv">
+			<form id="productToevoegenForm">
+				Naam: <input id="text" type="text" name="naam"><br>
+				Prijs: <input id="prijs" type="text" name="prijs"> <span
+					id="prijsError"></span><br> Omschrijving: <input
+					id="omschrijving" type="text" name="omschrijving"><br>
+				Afbeelding: <input type="file" name="afbeelding" accept=".jpg"><br>
+				<input type="button" value="Product toevoegen" id="submit">
+			</form>
+			<p id="succesMessage"></p>
+		</div>
+	</div>
+	<script src="js/productToevoegen.js"></script>
+</body>
+</html>

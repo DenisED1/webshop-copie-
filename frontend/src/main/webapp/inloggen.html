@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="css/inloggen.css">
+<link rel="stylesheet" href="css/welkom.css">
+<title>Webshop IAC</title>
+</head>
+<body>
+	<div id="frame">
+		<div id="navbar">
+			<ul id="navbar">
+				<div id="firstRow">
+					<li id="index"><a href="index.html">Home</a></li>
+					<li id="producten"><a href="producten.html">Producten</a></li>
+					<li id="categorieNavbar"><a>Categorie&#235;n</a></li>
+					<li id="inloggen" class="active"><a href="inloggen.html">Inloggen</a></li>
+					<li id="winkelwagen"><a>Winkelwagen</a></li>
+				</div>
+				<div id="secondRow">
+					<div id="empty"></div>
+					<div id="categorie" style="display: none;">
+						<ul id="categorieList">
+							<!-- hier komen categorieen -->
+						</ul>
+					</div>
+					<div id="winkelwagenDropdown" style="display: none;">
+						<ul id="winkelwagenList">
+							<!-- hier komen artikellen -->
+						</ul>
+					</div>
+				</div>
+			</ul>
+		</div>
+		<div id="login">
+			<form id="loginForm" action="" method="GET">
+				<input placeholder="Username" type="text" name="username" /><br>
+				<input placeholder="Password" type="password" name="password" /><br>
+				<input type="button" name="login" value="Login" onClick="inloggen(this.form)">
+				<input type="button" id="registreer" value="Registreer">
+			</form>
+		</div>
+		<div id="ingelogd">
+			<p>Je bent al ingelogd met:</p>
+			<p id="ingelogdUsername">Username</p>
+			<input type="button" name="logout" value="Logout" onClick="logout()">
+		</div>
+	</div>
+	<script src="js/inloggen.js"></script>
+	<script src="js/navbar.js"></script>
+</body>
+</html>
